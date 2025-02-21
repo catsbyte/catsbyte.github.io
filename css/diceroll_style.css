@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222831;
+    font-family: "Open Sans"
+}
+h1{
+    margin: 0;
+    padding: 0;
+    font-size: 10vw;
+    color: #EEEEEE;
+    font-family: "Bauhaus 93";
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2 {
+    font-size: 3vw;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2vw;
+    color: #EEEEEE;
+    font-family: "Rajdhani";
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.diceheader {
+    background-color: #941228;
+}
+h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    color: #EEEEEE;
+    font-family: "Rajdhani";
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main {
+    display: flex;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.dice {
+    margin-top: 20px;
+    background-color: #31363F; ;
+    margin-left: 2vw;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px #14171d;
+}
+img {
+    max-width: 300px;
+    width: 30vw;
+    padding: 10px;
+}
+hr {
+    margin-top: 2vw;
+}
+footer {
+    position: fixed;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2v
+    font-size: 3vw;
+    color: #EEEEEE;
+    font-family: "Rajdhani";
+}
+footer a {
+
+    text-decoration: none;
+}
+footer a:visited {
+    text-decoration: none;
+    color: white;
+
+}
+footer a:hover {
+    text-decoration: none;
+    font-size: 3.3vw;
+    color: rgb(197, 197, 174)
+}

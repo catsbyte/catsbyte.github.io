@@ -1,15 +1,14 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #632647;
+    background-color: #222831;
     position: relative;
 }
 header{
-    background-color: rgb(123, 89, 179);
+    background-color: #31363F;
     position: fixed;
     width: 100%;
     top: 0;
-    background-color: rgb(123, 89, 179);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -17,7 +16,7 @@ header{
 .container{
     width: 128px;
     margin: auto;
-} 
+}
 .navbar{
     width: 95%;
     margin: 0 auto;
@@ -28,7 +27,7 @@ header{
     align-items: center;
 }
 .navbar a{
-    color:white;
+    color: #EEEEEE;
     text-decoration: none;
     text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
@@ -60,7 +59,7 @@ header{
 }
 .based {
     max-width: 650px;
-    background-color:rgb(207, 72, 113);
+    background-color: #76ABAE;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.30);
     border-radius: 20px;
     width:95%;
@@ -74,7 +73,7 @@ header{
     font-family: "Modak", serif;
     font-weight: 200;
     font-style: normal;
-    color: white;
+    color: #EEEEEE;
     line-height: 60%;
     margin-top: 8%;
     margin-bottom: 0px;
@@ -83,7 +82,8 @@ header{
     font-family: helvetica, system-ui;
     font-weight: lighter;
     letter-spacing: 0.15rem;
-    color: white;
+    padding-bottom: 15px;
+    color: #EEEEEE;
 }
 .basia {
     padding: 0px;
@@ -92,6 +92,39 @@ header{
     border-radius: 10px;  /* Zaokrąglenie rogów */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);  /* Cień */
 }
+h2 {
+    padding-top: 20px;
+    padding-left: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Oswald;
+    margin-left: auto;
+    margin-right: auto;
+    color: #EEEEEE;
+    text-decoration: none;
+}
+.proj {
+    text-decoration: none;
+}
+.main {
+    display: grid;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 310px 310px 310px;
+    grid-template-rows: 410px;
+    margin-top: 80px;
+    padding: 0;
+}
+.project {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 1vw;
+    background-color:#454f57;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.30);
+    border-radius: 10px;
+}
+
 
 @media(max-width: 1280px){
     .container{
@@ -101,6 +134,41 @@ header{
 @media(min-width: 1280px){
     .container{
         width: 80%;
+    }
+}
+@media(max-width: 945px){
+    .main {
+        display: block;
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 80px;
+        padding: 0;
+    }
+    .project {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 95vw;
+        width: 95vw;
+        height: 140px;
+    }
+    h2 {
+
+        font-family: Oswald;
+        font-size: 20px;
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .menu{
+        gap: 15%;
+        margin-right: 30%;
+    }
+    .menu a{
+        font-size: 3.5vw;
+    }
+    .subtitle {
+        font-size: 20px;
     }
 }
 @media(max-width: 650px){
@@ -116,11 +184,11 @@ header{
 }
 @media(max-width: 400px){
     .menu{
-        gap: 15%;
+        gap: 10%;
         margin-right: 30%;
     }
     .menu a{
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
     .subtitle {
         font-size: 20px;
@@ -145,8 +213,3 @@ header{
     width: 90%;
     max-width: 800px;
 }
-
-
-
-
-
