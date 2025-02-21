@@ -1,68 +1,40 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>MaxwellCat</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Modak&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <link rel="icon" href="static/favicon/android-chrome-512x512.png">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MaxwellCat</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Modak&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="favicon/android-chrome-512x512.png">
+    </head>
 <body>
     <header>
-
         <div class="container">
-
             <nav class="navbar">
-
                 <a href="index.html" class="branding">CatLab</a>
-
                 <ul class="menu">
-
                     <li><a href="index.html">HOME</a></li>
-
                     <li><a href="index.html">TESTING</a></li>
-
                     <li><a href="index.html">ABOUT</a></li>
-
                     <li><a href="index.html"></a></li>
-
                 </ul>
-
-            </nav>    
-
+            </nav>
         </div>
-
     </header>
-    <div class="tiles">   
+    <div class="tiles">
         <img id="maxwell-gif"
-        src="{{ url_for('static', filename='videos/maxwell-cat.gif') }}">
+        src="assets/videos/maxwell-cat.gif">
     </div>
     <audio id="audio" autoplay>
-        <source src="{{ url_for('static', filename='audio/maxwell-the-cat-theme.mp3') }}" type="audio/mpeg">
+        <source src="assets/audio/maxwell-the-cat-theme.mp3" type="audio/mpeg">
         Twoja przeglądarka nie obsługuje elementu audio.
     </audio>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const audio = document.getElementById("audio");
-            audio.play().catch(error => {
-                console.log("Autoodtwarzanie zablokowane, wymagane kliknięcie użytkownika");
-            });
-        });
-    </script>
+    <script src="js/maxwell.js"></script>
 </body>
-</hmtl>
+</html>
