@@ -1,7 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatsByte</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Modak&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon/android-chrome-512x512.png">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="{{ url_for('home') }}" class="branding">CatsByte</a>
+                <ul class="menu">
+                    <li><a href="{{ url_for('home') }}">HOME</a></li>
+                    <li><a href="{{ url_for('home') }}">TESTING</a></li>
+                    <li><a href="{{ url_for('home') }}">ABOUT</a></li>
+                    <li><a href="{{ url_for('home') }}"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="tiles">
+        <div class="based">
+            <h1 class="title">MIAU!</h1>
+            <a href="{{ url_for('maxwell') }}">
+                <img src="{{ url_for('static', filename='images/basia.jpg') }}" alt="Basia" class="basia">
+            </a>
+            <h2 class="subtitle">NIE DOTYKAJ KOTKA!</h2>
+        </div>
+    </div>
 </body>
 </html>

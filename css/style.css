@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #632647;
+    position: relative;
+}
+header{
+    background-color: rgb(123, 89, 179);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: rgb(123, 89, 179);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.container{
+    width: 128px;
+    margin: auto;
+} 
+.navbar{
+    width: 95%;
+    margin: 0 auto;
+    margin-right: 0px;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a{
+    color:white;
+    text-decoration: none;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.branding{
+    font-size: 1.5rem;
+    font-family: "Monoton", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.menu a {
+    font-size: 1.2rem;
+    font-family: "Rajdhani", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+}
+
+.tiles {
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.based {
+    max-width: 650px;
+    background-color:rgb(207, 72, 113);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.30);
+    border-radius: 20px;
+    width:95%;
+
+    display: relative;
+    align-items: center;
+    text-align: center;
+}
+.title {
+    font-size: 220px;
+    font-family: "Modak", serif;
+    font-weight: 200;
+    font-style: normal;
+    color: white;
+    line-height: 60%;
+    margin-top: 8%;
+    margin-bottom: 0px;
+}
+.subtitle {
+    font-family: helvetica, system-ui;
+    font-weight: lighter;
+    letter-spacing: 0.15rem;
+    color: white;
+}
+.basia {
+    padding: 0px;
+    margin: 0px;
+    max-width: 90%;
+    border-radius: 10px;  /* Zaokrąglenie rogów */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);  /* Cień */
+}
+
+@media(max-width: 1280px){
+    .container{
+        width: 100%;
+    }
+}
+@media(min-width: 1280px){
+    .container{
+        width: 80%;
+    }
+}
+@media(max-width: 650px){
+    .title {
+        font-size: 33vw;
+    }
+}
+@media(max-width: 435px){
+    .menu{
+        gap: 20%;
+        margin-right: 25%;
+    }
+}
+@media(max-width: 400px){
+    .menu{
+        gap: 15%;
+        margin-right: 30%;
+    }
+    .menu a{
+        font-size: 4vw;
+    }
+    .subtitle {
+        font-size: 20px;
+    }
+}
+@media(max-width: 300px){
+    .menu{
+        gap: 5%;
+        margin-right: 20px;
+
+    }
+    .menu a{
+        font-size: 4.5vw;
+    }
+    .subtitle {
+        font-size: 13px;
+    }
+}
+#maxwell-gif{
+    position: absolute;
+    top: 15vh;
+    width: 90%;
+    max-width: 800px;
+}
+
+
+
+
+
